@@ -1,0 +1,138 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Europa", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+
+.btn-red-text {
+  background-color: white;
+  color: #68080b;
+}
+
+.bg-red {
+  background-color: #ee1f25;
+}
+
+.bg-black {
+  background-color: #212121;
+}
+
+.banner {
+  height: 70vh;
+  background-color: #ee1f25;
+}
+
+.features .card {
+  height: 400px;
+  border-radius: 20px;
+}
+
+.features h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ee1f25;
+}
+
+.benefits h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #150544;
+}
+
+.img-icon {
+  width: 100px;
+  padding-bottom: 20px;
+}
+
+.features-card-body {
+  display: flex;
+  flex-direction: column;
+}
+.features-text {
+  flex-grow: 1;
+}
+.info-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  color: white;
+}
+
+.info-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.info-phone .img-fluid {
+  width: 55%;
+}
+
+.info-heading h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.features {
+  text-align: center;
+}
+
+.features h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ee1f25;
+}
+
+.benefits {
+  background-color: #f3f4ff;
+}
+
+.benefits h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #150544;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+.padding-t-b {
+  padding: 100px 0;
+}
+
+.footer {
+  flex-shrink: 0;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .info-heading h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .banner {
+    height: 80vh;
+    overflow: hidden;
+    background-color: #ee1f25;
+  }
+  .info-phone {
+    padding-top: 50px;
+  }
+  .info-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+}
