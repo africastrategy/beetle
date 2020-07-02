@@ -11,14 +11,14 @@
     <link href="css/europa-font.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>BeBeetle Savings and Investment Platform in Nigeria</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-red">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.jpg" width="60" />
+                <img src="images/logo.png" width="80" />
             </a>
             <div class="navbar-email">
                 <h5 class="text-white">hello@beetle.com</h5>
@@ -32,16 +32,48 @@
                 <div class="col-lg-6">
                     <div class="info-heading">
                         <h2>Save and Invest for the future.</h2>
-                        <p>We help you create, nurture and monitor healthy saving and investment habit by helping you
-                            reach
-                            that financial target
-                            whether you're a student, an employee or a business owner.</p>
-                        <a href="#" class="btn btn-red-text">Create a Free Account</a>
+                        <p>We will create, nurture and monitor a healthy savings and investment culture, thereby enabling you attain your financial target, either as a student, employee or entrepreneur.</p>
+                        <button id="formButton" class="btn btn-red">Get early access</button>
+
+                        <form id="regForm" action="">
+                            <!-- One "tab" for each step in the form: -->
+                            <div class="tab">
+                                <p><input placeholder="Tell us your name" class="form-control" oninput="this.className = 'form-control'"></p>
+                            </div>
+
+                            <div class="tab">
+                                <p><input placeholder="Tell us your email address" class="form-control" oninput="this.className = 'form-control'"></p>
+                            </div>
+
+                            <div class="tab">
+                                <p><input placeholder="What is your occupation?" class="form-control" oninput="this.className = 'form-control'"></p>
+                            </div>
+
+                            <!-- <div class="tab">
+                                <p><input placeholder="What is your email?" class="form-control" oninput="this.className = 'form-control'"></p>
+                            </div> -->
+
+                            <div style="overflow:auto;">
+                                <div style="float:right;">
+                                    <!-- <button type="button" class="btn btn-primary" id="prevBtn" onclick="nextPrev(-1)">Previous</button> -->
+                                    <button type="button" class="btn btn-danger" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                </div>
+                            </div>
+                            <div style="text-align:left;" id="regForm">
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <!-- <span class="step"></span> -->
+                            </div>
+                        </form>
+
+                        <!-- Circles which indicates the steps of the form: -->
+
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="info-phone">
-                        <img src="images/Phone.png" class="img-fluid">
+                        <img src="images/Phone2.png" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -80,7 +112,7 @@
                             <div class="card-body features-card-body">
                                 <div class="features-text">
                                     <h3>Earn</h3>
-                                    <p>Earn without doing anything much.</p>
+                                    <p>Wrong messaging. Change to let your investments provide an earning for you.</p>
                                 </div>
                                 <img src="images/earn.svg" class="img-fluid">
                             </div>
@@ -115,9 +147,7 @@
                     <div class="col-lg-6 mb-3">
                         <img src="images/interest.svg" class="img-fluid img-icon" />
                         <h4>Interest</h4>
-                        <p>We don’t just watch you save and invest, we support your money moves with up to 12% annual
-                            interest when you save and up
-                            to 28% annual interest when you invest.
+                        <p>We dont just watch you save and invest, we reward your money moves with competitive interests rates on your savings and investment
                         </p>
                     </div>
                     <div class="col-lg-6 mb-3">
@@ -143,7 +173,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto text-center">
-                    <img src="images/logo.jpg" width="200" />
+                    <img src="images/logo.png" width="100" />
                     <p class="mt-3">At Beetle Savings we intend to help millions of people reach their savings goals and
                         increase
                         their money.</p>
@@ -159,6 +189,19 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+        const formButton = document.querySelector("#formButton")
+        const formVisible = document.querySelector("#regForm")
+        const tab = document.querySelectorAll(".tab")
+        const nextBtn = document.querySelector("#nextBtn")
+
+        formButton.addEventListener("click", function () {
+            formButton.style.display = "none"
+            formVisible.style.display = "flex"
+        })
+
+    </script>
 </body>
 
 </html>
